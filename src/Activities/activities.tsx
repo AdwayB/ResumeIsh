@@ -53,4 +53,4 @@ const Activity = () => {
   );
 };
 
-export { Activity, activities };
+export { Activity };

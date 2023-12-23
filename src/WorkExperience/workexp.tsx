@@ -57,4 +57,4 @@ const Workexps = () => {
   );
 };
 
-export { Workexps, details };
+export { Workexps };

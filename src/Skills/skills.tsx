@@ -54,4 +54,4 @@ const Skill = () => {
   );
 };
 
-export { Skill, skills };
+export { Skill };

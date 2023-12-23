@@ -68,4 +68,4 @@ const Project = () => {
   );
 };
 
-export { Project, projects };
+export { Project };

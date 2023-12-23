@@ -64,4 +64,4 @@ const Educations = () => {
   );
 };
 
-export { Educations, educations };
+export { Educations };
