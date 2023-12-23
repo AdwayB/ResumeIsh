@@ -1,41 +1,24 @@
-import { useRef } from 'react'
-import './App.css'
-import { Header } from './Header/HeaderBlock';
-import { WorkExp } from './WorkExperience/WorkexpBlock';
-import { Projects } from './Projects/ProjectsBlock';
-import { Activities } from './Activities/ActivitiesBlock';
-import { Education } from './Education/EducationBlock';
-import { Skills } from './Skills/SkillsBlock';
-import { Additional } from './Additional/AdditionalBlock';
-import generatePDF from 'react-to-pdf';
+import { useRef } from 'react';
+import './App.css';
+import { useReactToPrint } from 'react-to-print';
 import { Button } from 'antd';
-
-const handleMouseClick = (targetRef: any) => {
-  generatePDF(targetRef, {
-    filename: 'ad_resume.pdf'
-  });
-} 
+import { Resume } from './Resume';
 
 const App = () => {
-  const targetRef = useRef<HTMLDivElement>(null);
+  const targetRef = useRef(null);
+
   return (
     <>
-      <div ref={targetRef} className='resume'>
-        <Header />
-        <div className='left'>
-          <WorkExp />
-          <Projects />
-          <Activities />
-        </div>
-        <div className='right'>
-          <Education />
-          <Skills />
-          <Additional />
-        </div>
-      </div>
-      <Button onClick={handleMouseClick.bind(null, targetRef)}>Download</Button>
+      <Resume ref={targetRef} />
+      <Button
+        onClick={useReactToPrint({
+          content: () => targetRef.current
+        })}
+      >
+        Download
+      </Button>
     </>
   );
-}
+};
 
-export default App
+export default App;
