@@ -1,0 +1,58 @@
+.headerContainer {
+  width: max(50%, 49rem);
+  height: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.nameEmployment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.name {
+  font-size: var(--font-size-headerName);
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.emp {
+  font-size: var(--font-size-headerJob);
+  font-weight: 500;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: var(--font-size-11pt);
+  text-align: center;
+}
+
+.detailLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  aspect-ratio: 1;
+  height: var(--font-size-11pt);
+  padding: 0 8px 0 0;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.line {
+    height: 0px;
+    width: 98%;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.7);
+}

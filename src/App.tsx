@@ -6,14 +6,17 @@ import { Resume } from './Resume';
 
 const App = () => {
   const targetRef = useRef(null);
-
   return (
     <>
-      <Resume ref={targetRef} />
+      <div className='resumeContainer'>
+        <Resume ref={targetRef} />
+      </div>
       <Button
         onClick={useReactToPrint({
           content: () => targetRef.current
         })}
+        type='primary'
+        style={{ marginTop: '20px' }}
       >
         Download
       </Button>
