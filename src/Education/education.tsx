@@ -18,22 +18,22 @@ const educations: educationBlockProps = {
       name: 'Vellore Institute of Technology',
       subtitle: 'B.Tech Computer Science and Engineering',
       location: 'Vellore, Tamil Nadu',
-      duration: 'Expected Aug 2025'
-      // description: ['CGPA: 8.58']
+      duration: 'Expected Aug 2025',
+      description: ['CGPA: 8.58']
     },
     {
       name: 'Excellencia Junior College',
       subtitle: 'Senior Secondary Education (TSBIE)',
       location: 'Hyderabad, Telangana',
-      duration: '2019 - 2021'
-      // description: ['12th Grade Percentage: 89%']
+      duration: '2019 - 2021',
+      description: ['12th Grade Percentage: 89%']
     },
     {
       name: 'St. Andrews High School',
       subtitle: 'Primary and Secondary Education (CBSE)',
       location: 'Hyderabad, Telangana',
-      duration: '2007 - 2019'
-      // description: ['10th Grade Percentage: 89%']
+      duration: '2007 - 2019',
+      description: ['10th Grade Percentage: 89%']
     }
   ]
 };
