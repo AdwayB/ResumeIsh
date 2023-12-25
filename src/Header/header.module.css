@@ -1,10 +1,13 @@
 .headerContainer {
-  width: max(50%, 49rem);
-  height: 140px;
+  position: absolute;
+  top: 10px;
+  left: 2.4rem;
+  width: max(50%, 50.5rem);
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
+  padding: 0 40px 10px 0px;
 }
 
 .nameEmployment {
@@ -45,14 +48,14 @@
   padding: 0 8px 0 0;
 }
 
-.links{
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
 }
 
 .line {
-    height: 0px;
-    width: 98%;
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.7);
+  height: 0px;
+  width: 98%;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.7);
 }

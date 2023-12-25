@@ -16,7 +16,7 @@ interface companyBlockProps {
 const details: companyBlockProps = {
   blocks: [
     {
-      company: 'Qapita Fintech India Pvt Ltd,',
+      company: 'Qapita Fintech India Pvt Ltd',
       companyDesc: 'A comprehensive equity management platform',
       location: 'Hyderabad, IN',
       duration: 'Aug 2023 - present',

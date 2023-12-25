@@ -20,9 +20,11 @@ const Resume = React.forwardRef((_props: any, ref: any) => {
           <Activities />
         </div>
         <div className={styles.right}>
-          <Education />
-          <Skills />
-          <Additional />
+          <div className={styles.rightContainer}>
+            <Education />
+            <Skills />
+            <Additional />
+          </div>
         </div>
       </div>
     </div>

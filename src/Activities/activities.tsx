@@ -1,4 +1,4 @@
-import styles from "./activities.module.css";
+import styles from './activities.module.css';
 
 interface activityDetails {
   name: string;
@@ -15,16 +15,16 @@ interface activityBlockProps {
 const activities: activityBlockProps = {
   blocks: [
     {
-      name: "Sigma XI: The Scientific Research Honor Society",
-      subtitle: "Acting Chairperson, Core Committee Member",
-      location: "Vellore, TN",
-      duration: "Apr 2022 - present",
+      name: 'Sigma XI: The Scientific Research Honor Society',
+      subtitle: 'Acting Chairperson, Core Committee Member',
+      location: 'Vellore, TN',
+      duration: 'Apr 2022 - present',
       description: [
-        "Founded Tech Ed sessions to organize technical training for ~200 students.",
-        "Organized, conducted and advertised 10+ events with 700+ participants in university.",
-      ],
-    },
-  ],
+        'Founded Tech Ed sessions to organize technical training for ~200 students.',
+        `Organized, conducted and advertised 10+ events with 700+ participants, including events at the University's Cultural Fest and Technical Fest.`
+      ]
+    }
+  ]
 };
 
 const Activity = () => {
@@ -42,7 +42,11 @@ const Activity = () => {
               </p>
               <ul className={styles.description}>
                 {block.description.map((description, index) => {
-                  return <li className={styles.descItem} key={index}>{description}</li>;
+                  return (
+                    <li className={styles.descItem} key={index}>
+                      {description}
+                    </li>
+                  );
                 })}
               </ul>
             </div>

@@ -1,4 +1,4 @@
-import styles from "./additional.module.css";
+import styles from './additional.module.css';
 
 interface detailsBlock {
   name: string;
@@ -17,17 +17,17 @@ interface additionalBlockProps {
 const additionals: additionalBlockProps = {
   blocks: [
     {
-      title: "Interests",
+      title: 'Interests',
       details: [
         {
-          name: "Music Production/Engineering",
+          name: 'Music Production/Engineering',
           description: [
-            "A trained guitarist and producer of 5+ years. Incorporates multiple genres including rock, metal, jazz, blues, electronic, indie, etc.",
-          ],
-        },
-      ],
-    },
-  ],
+            'A trained guitarist and producer of 5+ years. Incorporates multiple genres including rock, metal, jazz, blues, electronic, indie, etc.'
+          ]
+        }
+      ]
+    }
+  ]
 };
 
 const Additionals = () => {
@@ -41,9 +41,13 @@ const Additionals = () => {
               {block.details.map((desc, index) => {
                 return (
                   <div className={styles.details} key={index}>
-                    <p className={styles.name}>{desc.name}</p>
+                    <p className={styles.detname}>{desc.name}</p>
                     {desc.description.map((desc, index) => {
-                      return <p className={styles.description} key={index}>{desc}</p>;
+                      return (
+                        <p className={styles.description} key={index}>
+                          {desc}
+                        </p>
+                      );
                     })}
                   </div>
                 );
